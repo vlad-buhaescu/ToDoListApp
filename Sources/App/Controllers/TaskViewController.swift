@@ -67,6 +67,9 @@ final class TaskViewController {
         
     }
     
+    
+    
+    
     func getAll(_ req: Request) throws -> ResponseRepresentable {
         let result = try drop.database?.driver.raw("SELECT taskId, title from Tasks;")
         
